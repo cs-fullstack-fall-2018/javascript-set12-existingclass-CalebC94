@@ -22,6 +22,15 @@ class Person {
 }
 
 function main() {
+    var myInfo = new Person("Caleb", 23, 185, 75);
+    var otherInfo = new Person("Jordan", 55, 250, 78);
+
+    alert(myInfo.bodyMassIndex());
+    alert(otherInfo.bodyMassIndex());
+
+    var personArray = [myInfo, otherInfo];
+    personArray[0].printPerson();
+    personArray[1].printPerson();
 
 }
 
